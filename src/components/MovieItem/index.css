@@ -1,0 +1,8 @@
+/* Write your CSS here */
+.popup-content {
+  background-color: #ffffff;
+  width: 750px;
+  height: 450px;
+  border-radius: 16px;
+  padding-left: 50px;
+}
