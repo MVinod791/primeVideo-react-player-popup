@@ -14,13 +14,13 @@ const MoviesSlider = props => {
     slidesToScroll: 1,
   }
   return (
-    <div>
+    <>
       <Slider {...settings}>
         {moviesList.map(eachMovie => (
           <MovieItem key={eachMovie.id} moviesDetails={eachMovie} />
         ))}
       </Slider>
-    </div>
+    </>
   )
 }
 export default MoviesSlider

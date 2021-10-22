@@ -7,7 +7,7 @@ import './index.css'
 // Write your code here
 const MovieItem = props => {
   const {moviesDetails} = props
-  const {thumbnailUrl, videoUrl, ModelContainer} = moviesDetails
+  const {thumbnailUrl, videoUrl, ModelCloseContainer} = moviesDetails
   return (
     <Popup
       modal
@@ -15,7 +15,7 @@ const MovieItem = props => {
       className="popup-content"
     >
       {close => (
-        <ModelContainer>
+        <ModelCloseContainer>
           <CloseButton
             type="button"
             onClick={() => close()}
@@ -24,7 +24,7 @@ const MovieItem = props => {
             <IoMdClose size="30" color="#616e7c" />
           </CloseButton>
           <ReactPlayer url={videoUrl} controls />
-        </ModelContainer>
+        </ModelCloseContainer>
       )}
     </Popup>
   )
